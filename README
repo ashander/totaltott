@@ -1,0 +1,8 @@
+to replicate:
+
+1. download twarc (https://github.com/DocNow/twarc) and get it set up and running
+2. run:
+
+    twarc search 'TotalToTT' > ttdata.json 
+    cat ttdata.json | source ttdata.sh  # writes ttdata.ndjson
+    source ttrun.sh # runs quick summary stats
